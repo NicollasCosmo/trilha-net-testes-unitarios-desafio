@@ -8,6 +8,18 @@ namespace TestesUnitarios.Desafio.Console.Services
             return listaSemNegativos.ToList();
         }
 
+        public List<int> MultiplicarElementosPorDois(List<int> lista)
+        {
+            List<int> resultado = new List<int>();
+
+            foreach (var elemento in lista)
+            {
+                resultado.Add(elemento * 2);
+            }
+
+            return resultado;
+        }
+
         public bool ListaContemDeterminadoNumero(List<int> lista, int numero)
         {
             var contem = lista.Contains(numero);
